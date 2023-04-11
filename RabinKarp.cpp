@@ -53,13 +53,14 @@ vector<int> rabin_karp(string &s, string &t){
 
 
 void solve(){
-    string s, t;
-    cin>>s>>t;
+    string t, s;
+    cin>>t>>s;
     vector<int> pos = rabin_karp(s, t);
     for(int i=0;i<pos.size();i++){
         cout<<pos[i]<<" ";
     }
     cout<<endl;
+    // cout<<pos.size()<<endl;
 }
 
 int main(){
@@ -69,3 +70,7 @@ int main(){
         solve();
     }
 }
+
+// int main(){
+//     solve();
+// }
