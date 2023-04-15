@@ -4,6 +4,12 @@ using namespace std;
 const int mod = 1e9 + 7;
 
 
+// single hash -> collision -> 1/mod => 1/1e9+7 good
+// rolling hash (double hash) -> 1/mod1*mod2 => 1/1e18 better
+// random hash is the best
+
+
+
 int find_hash(string &s){
     int h = 0;
     for(auto &c: s){
